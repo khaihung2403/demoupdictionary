@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="758.0" prefWidth="869.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllor.AddController">
+    <children>
+        <!-- Wrapping StackPane for image and interface -->
+        <StackPane alignment="CENTER">
+            <!-- Image -->
+            <ImageView fitHeight="748.0" fitWidth="1038.0">
+                <image>
+                    <Image url="@../../../Images/Add.jpg" />
+                </image>
+            </ImageView>
+            <!-- StackPane for interface -->
+            <StackPane alignment="CENTER" layoutY="-47.0" prefHeight="748.0" prefWidth="1024.0">
+                <padding>
+                    <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+                </padding>
+                <children>
+                    <VBox alignment="CENTER" prefHeight="638.0" prefWidth="1193.0" spacing="20.0">
+                        <children>
+                            <Label prefHeight="90.0" prefWidth="204.0" style="-fx-font-size: 36px;" text="Thêm từ mới" textFill="RED" />
+                            <VBox alignment="CENTER" spacing="10.0">
+                                <children>
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Label style="-fx-font-size: 24px;" text="Từ:" />
+                                            <TextField fx:id="wordField" prefHeight="51.0" prefWidth="295.0" style="-fx-font-size: 24px;" />
+                                        </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Label prefHeight="35.0" prefWidth="128.0" style="-fx-font-size: 24px;" text="Định nghĩa:" />
+                                            <TextField fx:id="definitionField" prefHeight="51.0" prefWidth="394.0" style="-fx-font-size: 24px;" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                            <Button onAction="#addWord" prefHeight="51.0" prefWidth="254.0" style="-fx-font-size: 24px;" text="Thêm" />
+                            <!-- Thêm nút Back -->
+                            <Button fx:id="backButton" onAction="#back" prefHeight="51.0" prefWidth="254.0" style="-fx-font-size: 24px;" text="Back" />
+                        </children>
+                    </VBox>
+                </children>
+            </StackPane>
+        </StackPane>
+    </children>
+</AnchorPane>
