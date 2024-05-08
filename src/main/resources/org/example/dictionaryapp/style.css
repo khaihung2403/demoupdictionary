@@ -1,0 +1,34 @@
+/* Định nghĩa quy tắc cho class label-title */
+.label-title {
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial Bold Italic";
+    -fx-text-fill: #FFFFFF; /* Màu chữ */
+}
+
+/* Định nghĩa quy tắc cho class text-field-search */
+.text-field-search {
+    -fx-background-color: #E0E0E0; /* Màu nền */
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000; /* Màu chữ */
+}
+
+/* Định nghĩa quy tắc cho class list-view */
+.list-view {
+    -fx-background-color: #FFFFFF; /* Màu nền */
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000; /* Màu chữ */
+}
+
+/* Định nghĩa quy tắc cho class text-area-definition */
+.text-area-definition {
+    -fx-background-color: #FFFFFF; /* Màu nền */
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000; /* Màu chữ */
+}
+
+/* Định nghĩa quy tắc cho class button */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền */
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF; /* Màu chữ */
+}
